@@ -21,7 +21,7 @@ const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
   userId: {
-    type: String,
+    type: Number,
     required: true,
   },
   movieId: {
@@ -29,7 +29,7 @@ const userSchema = new mongoose.Schema({
     required: true,
   },
   vote: {
-    type: Number,
+    type: String,
     enum: ["like", "dislike"],
     required: true,
   },
